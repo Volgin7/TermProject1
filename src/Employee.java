@@ -3,10 +3,10 @@ public class Employee {
     private String middleName;
     private String lastName;
     private int salary;   // тип int взят намерено, в предположении достаточности точности расчетов ЗП до рублей
-    private String department;
+    private int department;
     private int id;
 
-    public Employee(int id, String firstName, String middleName, String lastName, int salary, String department) {
+    public Employee(int id, String firstName, String middleName, String lastName, int salary, int department) {
         this.id = id;
         this.firstName = firstName;
         this.middleName = middleName;
@@ -30,7 +30,7 @@ public class Employee {
         public int getSalary() {
             return salary;
         }
-        public String getDepartment() {
+        public int getDepartment() {
             return department;
         }
         // all setters
@@ -49,7 +49,7 @@ public class Employee {
         public void setSalary(int salary) {
             this.salary = salary;
         }
-        public void setDepartment(String department) {
+        public void setDepartment(int department) {
             this.department = department;
         }
 
