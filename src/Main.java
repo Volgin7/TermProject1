@@ -62,7 +62,7 @@ public class Main {
 
     public static void findEmployeesWithHigherSalary(Employee[] employees, int salaryLimit) {
         for (Employee person:employees) {
-            if(person != null  && person.getSalary() > salaryLimit ) {
+            if(person != null  && person.getSalary() >= salaryLimit ) {
                 System.out.println("ФИО=" + person.getLastName() + " " + person.getFirstName() + " " + person.getMiddleName() + ", id=" + person.getID() + ", ФЗП=" + person.getSalary());
             }
         }
